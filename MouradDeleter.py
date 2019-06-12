@@ -3,6 +3,9 @@ from tkinter.filedialog import askopenfilename
 import shutil
 import os
 import datetime as dt
+import zipfiler
+
+
 
 try:
 	os.mkdir("tobedeleted")
@@ -76,4 +79,8 @@ report = gz.TextBox(app, text="⮚ Deleting older than 48 hours",  width="fill",
 deleteold()
 report.append('⮚ Select a file and click on DELETE')
 
+
+
 app.display()
+zipfiler.zipper()
+
